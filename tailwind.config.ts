@@ -5,8 +5,12 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
+    fontSize: {
+      test: '2.052rem',
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -14,5 +18,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 } satisfies Config;
